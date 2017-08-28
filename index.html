@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link href="css/base.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap-container">
+    <div class="left-sidebar">
+      <div class="left-col">
+        Title
+      </div>
+      <div class="left-col">
+        Title 1
+      </div>
+      <div class="left-col">
+        Title 2
+      </div>
+      <div class="left-col">
+        Title 3
+      </div>
+      <div class="left-col">
+        Title 4
+      </div>
+      <div class="left-col">
+        Title 5
+      </div>
+      <div class="left-col">
+        Title 6
+      </div>
+      <div class="left-col">
+        Title 7
+      </div>
+      <div class="left-col">
+        Title 8
+      </div>
+      <div class="left-col">
+        Title 8
+      </div>
+        
+    </div>
+    <div class="main-container">
+      <!--<header class="header-flex">
+        <div class="head-col col-red">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 1 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+                <div class="col-1 d">D</div>
+                <div class="col-1 e">E</div>
+                <div class="col-1 f">F</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-col col-green">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 2 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+                <div class="col-1 d">D</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-col col-blue">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 2 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+                <div class="col-1 d">D</div>
+                <div class="col-1 e">E</div>
+                <div class="col-1 f">F</div>
+                <div class="col-1 g">G</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-col col-yellow">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 2 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+                <div class="col-1 d">D</div>
+                <div class="col-1 e">E</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-col col-pink">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 2 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-col col-gray">
+          <div class="head-1">
+            <div class="head-text">
+              Heading 2 <i class="fa fa-refresh"></i>
+            </div>
+            <div class="head-text">
+              <div class="col-grid">
+                <div class="col-1 a">A</div>
+                <div class="col-1 b">B</div>
+                <div class="col-1 c">C</div>
+                <div class="col-1 d">D</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>-->
+      <section class="content">
+        <div class="grid-1 heading-1">
+          <div class="head-col header">
+            <div class="head-1">
+              <div class="head-text">
+                Heading 1 <i class="fa fa-refresh"></i>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">A</div>
+                  <div class="col-1 orange">B</div>
+                  <div class="col-1 yellow">C</div>
+                  <div class="col-1 green">D</div>
+                  <div class="col-1 blue">E</div>
+                  <div class="col-1 indigo">F</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col">
+            <div class="head-1">
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">11</div>
+                  <div class="col-1 orange">09</div>
+                  <div class="col-1 yellow">16</div>
+                  <div class="col-1 green">18</div>
+                  <div class="col-1 blue">01</div>
+                  <div class="col-1 indigo">99</div>
+                </div>
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 orange"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 yellow"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 green"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 blue"><input type="number" value="" name="" class="input-control"></div>
+                  <div class="col-1 indigo"><input type="number" value="" name="" class="input-control"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head-col footer">
+            <div class="head-1">
+              <div class="head-text">
+                Total
+              </div>
+              <div class="head-text">
+                <div class="col-grid">
+                  <div class="col-1 red">A</div>
+                  <div class="col-1 orange">B</div>
+                  <div class="col-1 yellow">C</div>
+                  <div class="col-1 green">D</div>  
+                  <div class="col-1 blue">E</div>
+                  <div class="col-1 indigo">F</div>
+                </div>
+              </div>
+              <div class="head-text">
+                 Grand Total <i class="fa fa-refresh"></i>
+              </div>
+              <div class="head-text">
+                 <input type="number" value="" name="" class="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+       
+
+
+      </section>
+      
+    </div>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(window).scroll(function(){
+        var winTop = $(window).scrollTop();
+        if(winTop >= 30){
+          $("body").addClass("fixed");
+        }else{
+          $("body").removeClass("fixed");
+        }//if-else
+      });//win func.
+  </script>
+</body>
+</html>
